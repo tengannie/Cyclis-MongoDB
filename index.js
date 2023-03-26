@@ -33,6 +33,7 @@ app.get('/add-note', async (req,res)=> {
             body: "It's a story about power...",
         }
         ]);
+        res.send('Books Added...')
     } catch(error) {
         console.log("err", + error);
     }
